@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "build:docs": "vite build --outDir docs",
+    "preview": "vite preview",
+    "deploy:gh-pages": "npm run build && npx gh-pages -d dist"
   },
   "dependencies": {
     "lucide-react": "^0.555.0",
